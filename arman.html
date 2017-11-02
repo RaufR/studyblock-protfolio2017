@@ -1,7 +1,5 @@
-
-<!doctype html>
-<html lang="en">
-  <head>
+<html>
+<head>
     <title>Hello, world!</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -11,31 +9,128 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
-  <body>
-    <header class="v-header container">
-        <div class="fullscreen-video-wrap">
-            <video src="C:\Users\raufr\Desktop\study block\website-protfolio\asset\sample1.mov" autoplay="" loop="">
-            </video>
-        </div>
-        <div class="header-overlay"></div>
-        <div class="header-content text-lg-center">
-            <h1>HEX-PEAK TEAM</h1>
-            <p>Hello, welcome to our group project, this project belong to Internet trchnologies block study programe<br>
-            Supervisor: <a href="https://github.com/pepe">Josef Pospíšil</a>
-            </p>
-            <a href="rauf.html" class="btn btn-info" role="button">arman</a>
-        
-        </div>
-    </header>
+<body>
+
+  <div>
+  <ul class="dotstyle dotstyle-fillin">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  </div>
+
+  <section id="home">
+    <div class="container">
+      <h2>Arman Bhuiyan</h2>
+      <p>Software Developer</p>
+    </div>
+  </section>
+
+ <section id="quote">
+
+      <div class="container-2">
+      <h2>About</h2>
+      <div class="avatar"> <img src="C:\Users\ArmaN\Documents\GitHub\studyblock-protfolio2017\asssets\arman.pic.jpg"></div>
+      <p>"Software Developer"<br>
+        "Software undergoes beta testing shortly before it’s released. Beta is Latin for 'still doesn’t work'. "
+      </p>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="container-bar">
+  <div class="skills python">48%</div>
+</div>
+<p align="center">Python3.5</p>
 
 
+<div class="container-bar">
+  <div class="skills java">25%</div>
+</div>
+<p align="center">JavaSE</p>
 
 
+<div class="container-bar">
+  <div class="skills angular">20%</div>
+</div>
+<p align="center">Angular2/4</p>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-  </body>
+<div class="container-bar">
+  <div class="skills htcs">30%</div>
+</div>
+<p align="center">HTML/CSS</p>
+
+<div class="container-bar">
+  <div class="skills c">35%</div>
+  </div>
+  <p align="center">C++</p>
+
+<div class="container-bar">
+  <div class="skills js">20%</div>
+</div>
+<p align="center">javascript</p>
+</div>
+</section>
+  <section id="contact">
+    <div class="container-2">
+      <h2>Contact</h2>
+
+        <form id="contact-form" action="" method="post">
+
+          <div class="form-item">
+            <input type="text" id="name" name="user_name" placeholder="Johnny Appleseed">
+            <label for="name">Name</label>
+          </div>
+
+          <div class="form-item">
+            <input type="email" id="mail" name="user_email" placeholder="john@example.com">
+            <label for="mail">Email</label>
+          </div>
+
+          <div class="form-item">
+            <input type="text" id="subject" name="user_subject" placeholder="Project Quote">
+            <label for="subject">Subject</label>
+          </div>
+
+          <div class="form-item">
+            <input type="checkbox" id="development" value="service_development" name="user_service">
+            <label for="frontend">Dev</label>
+            <input type="checkbox" id="design" value="design" name="user_service">
+            <label for="design">Design</label>
+          <label>Services</label>
+          </div>
+
+          <div class="form-item large">
+            <textarea id="message" rows="4" name="user_message" placeholder="Your message here"></textarea>
+            <label for="message">Message</label>
+          </div>
+        </form>
+
+          <p>Stay Connected</p>
+          <ul class="social">
+            <li><a href="mailto:info@chrisbreitigan.com"><i class="fa fa-envelope-o "></i></a></li>
+            <li><a href="http://www.dribbble.com/breitigan"><i class="fa fa-dribbble"></i></a></li>
+            <li><a href="https://www.twitter.com/breitigan"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="http://www.chrisbreitigan.com"><i class="fa fa-link"></i></a></li>
+          </ul>
+
+      </div>
+  </section>
+
+  <!-- <script>
+    $('a[href^="#"]').click(function(event) {
+        var id = $(this).attr("href");
+        var offset = 0;
+        var target = $(id).offset().top - offset;
+        $('html, body').animate({scrollTop:target}, 500);
+        event.preventDefault();
+      });
+  </script> -->
+<script></script>
+
+</body>
 </html>
