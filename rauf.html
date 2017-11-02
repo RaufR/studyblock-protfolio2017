@@ -10,36 +10,24 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-  <div>
-  <ul class="dotstyle dotstyle-fillin">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#portfolio">Portfolio</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  </div>
-
   <section id="home">
     <div class="container">
       <h2>Raufur Rahman</h2>
       <p>Developer with no brain.:P</p>
     </div>
   </section>
-
  <section id="quote">
 
       <div class="container-2">
       <h2>About</h2>
-      <div class="avatar"> <img src="C:\Users\raufr\Desktop\study block\website-protfolio\assets\rauf\1.jpg"></div>
+      <div class="avatar"> <img src="C:\Users\raufr\Desktop\study block\website-protfolio\assets\rauf.pic.jpg"></div>
       <p>"Deleted code is debugged code."<br>
         "Software undergoes beta testing shortly before it’s released. Beta is Latin for 'still doesn’t work'. "
       </p>
     </div>
   </section>
 
-  <section id="portfolio">
+  <section id="skills">
     <div class="container">
       <h2>Skills</h2>
       <div class="container-bar">
@@ -79,58 +67,44 @@
     <div class="container-2">
       <h2>Contact</h2>
 
-        <form id="contact-form" action="" method="post">
-
-          <div class="form-item">
-            <input type="text" id="name" name="user_name" placeholder="Johnny Appleseed">
+        <form >
+          <div class="form-item ">
+            <input type="text"  class="form-control" name="user_name" placeholder="Johnny Appleseed">
             <label for="name">Name</label>
           </div>
 
-          <div class="form-item">
-            <input type="email" id="mail" name="user_email" placeholder="john@example.com">
+          <div class="form-item ">
+            <input type="email" class="form-control" name="user_email" placeholder="john@example.com">
             <label for="mail">Email</label>
           </div>
 
-          <div class="form-item">
-            <input type="text" id="subject" name="user_subject" placeholder="Project Quote">
+          <div class="form-item ">
+            <input type="text"  class="form-control" id="subject" name="user_subject" placeholder="Project Quote">
             <label for="subject">Subject</label>
           </div>
 
-          <div class="form-item">
-            <input type="checkbox" id="development" value="service_development" name="user_service">
-            <label for="frontend">Dev</label>
-            <input type="checkbox" id="design" value="design" name="user_service">
-            <label for="design">Design</label>
-          <label>Services</label>
-          </div>
-
-          <div class="form-item large">
-            <textarea id="message" rows="4" name="user_message" placeholder="Your message here"></textarea>
+          <div class="form-item ">
+            <textarea class="form-control" rows="2" name="user_message" placeholder="Your message here"></textarea>
             <label for="message">Message</label>
           </div>
+          <button type="button col-lg-2" float="left"class="btn-custom form-item" onclick="button()">SEND</button>
+          <p id ="demo"></p>
         </form>
-
-          <p>Stay Connected</p>
-          <ul class="social">
-            <li><a href="mailto:info@chrisbreitigan.com"><i class="fa fa-envelope-o "></i></a></li>
-            <li><a href="http://www.dribbble.com/breitigan"><i class="fa fa-dribbble"></i></a></li>
-            <li><a href="https://www.twitter.com/breitigan"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="http://www.chrisbreitigan.com"><i class="fa fa-link"></i></a></li>
-          </ul>
-
       </div>
   </section>
 
-  <!-- <script>
-    $('a[href^="#"]').click(function(event) {
-        var id = $(this).attr("href");
-        var offset = 0;
-        var target = $(id).offset().top - offset;
-        $('html, body').animate({scrollTop:target}, 500);
-        event.preventDefault();
-      });
-  </script> -->
-<script></script>
+<script>
+function button(){
+  var  txt;
+  if(confirm("This message will contain your private information")==true){
+      txt="Send Sucessfully! ";
+  }else{
+    txt="Send Failed!!";
+  }
+  document.getElementById("demo").innerHTML = txt;
+
+}
+</script>
 
 </body>
 </html>
